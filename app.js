@@ -5,16 +5,13 @@ const { PythonShell } = require('python-shell');
 const fs = require('fs');
 const cors = require('cors');
 
-// Initialize Express app
+//Express server
 const app = express();
 app.use(cors());
 
-// Serve static files from the "static" folder
 app.use('/static', express.static(path.join(__dirname, 'static')));
-// Multer configuration for file uploads
-const upload = multer({ dest: 'upload/' });
 
-// Route to serve the frontend
+// route to render home page
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'Views', 'index.html'));
 });
@@ -24,7 +21,7 @@ app.post('/upload', upload.single('pdf'), (req, res) => {
     const pdfPath = req.file.path;
 
 });
-// Start the server
+// Run the server
 const PORT = 8000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
