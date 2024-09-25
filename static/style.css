@@ -1,0 +1,108 @@
+/* General Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+        background-color: #e4e9fd;
+        background-image: linear-gradient(45deg, #a683e3 50%, #e4e9fd 50%);
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+}
+
+/* Container for Form and Output */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Form Title */
+h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Form Label */
+label {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* File Input */
+input[type="file"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    width: 100%;
+    margin: 20px 0;
+    transition: border 0.3s ease;
+}
+
+input[type="file"]:focus {
+    border: 2px solid #0056b3;
+    outline: none;
+}
+
+/* Convert Button */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* OCR Result Section */
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+#result p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Textarea for OCR Output */
+textarea#ocr-output {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    resize: none;
+    background-color: #f9f9f9;
+}
+
+/* Footer Text */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 40px;
+}

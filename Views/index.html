@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten PDF to Word Converter</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convert Handwritten PDF to Word</h1>
+        <form id="upload-form" method="POST" enctype="multipart/form-data" action="/upload">
+            <label for="pdf-upload">Upload a PDF:</label>
+            <input type="file" id="pdf-upload" name="pdf" accept="application/pdf" required>
+            <button type="submit">Convert</button>
+        </form>
+        <div id="result">
+            <p>Text will appear here after conversion:</p>
+            <textarea id="ocr-output" rows="10" readonly></textarea>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
